@@ -30,6 +30,7 @@ public class RabbitMQService implements IMessageQueueService {
 
     public <T> void send(T obj) throws MQException {
         try {
+            //object will be from type JobFireEvent
             rabbitTemplate.convertAndSend(queue.getName(), obj);
             log.info("Message {} sent to queue {}", obj, queue.getName());
         }catch (AmqpException ex){

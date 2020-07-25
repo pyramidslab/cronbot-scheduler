@@ -13,7 +13,4 @@ public class JobEvent {
     @Setter(value = AccessLevel.NONE)
     private String _class;
     private Job object;
-
-    
-
 }
