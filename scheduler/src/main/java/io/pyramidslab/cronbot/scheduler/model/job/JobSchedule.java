@@ -1,4 +1,4 @@
-package io.outofbox.cronbot.model.job;
+package io.pyramidslab.cronbot.scheduler.model.job;
 
 import lombok.Data;
 
